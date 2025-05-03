@@ -1,0 +1,25 @@
+{
+  "name": "googlebooks-app",
+  "version": "1.0.0",
+  "description": "MERN Google Books search engine refactored to a GraphQL API",
+  "main": "server/dist/server.js",
+  "scripts": {
+    "install": "cd server && npm install && cd ../client && npm install",
+    "build": "concurrently \"cd server && npm run build\" \"cd client && npm run build\"",
+    "start": "cd server && npm install && npm run start",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm run dev\"",
+    "render-build": "npm install && npm run build"
+  },
+  "keywords": [
+    "graphql",
+    "apollo",
+    "express",
+    "react",
+    "mongo"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
